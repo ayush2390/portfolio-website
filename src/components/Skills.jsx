@@ -9,6 +9,7 @@ import colorSharp from "../assets/img/color-sharp.png";
 import html from "../assets/img/html-logo.png";
 import firebase from "../assets/img/firebase.png";
 import github from "../assets/img/github-logo.png";
+import css from "../assets/img/css.png";
 
 const Skills = () => {
   const responsive = {
@@ -21,15 +22,27 @@ const Skills = () => {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 480 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 480, min: 0 },
       items: 1,
     },
   };
   const slideImages = [
+    {
+      src: `${html}`,
+      name: "HTML",
+    },
+    {
+      src: `${css}`,
+      name: "CSS",
+    },
+    {
+      src: `${js}`,
+      name: "JavaScript",
+    },
     {
       src: `${react}`,
       name: "React",
@@ -41,14 +54,6 @@ const Skills = () => {
     {
       src: `${redux}`,
       name: "Redux",
-    },
-    {
-      src: `${js}`,
-      name: "JavaScript",
-    },
-    {
-      src: `${html}`,
-      name: "HTML",
     },
     {
       src: `${firebase}`,
@@ -70,9 +75,10 @@ const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className="skill-slider"
+                dots={true}
               >
                 {slideImages.map((image, index) => (
-                  <div>
+                  <div className="mapped-sliding-images" key={index}>
                     <img
                       src={image.src}
                       alt={image.name}

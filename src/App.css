@@ -640,3 +640,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-left: 100px;
   width: 40%;
 }
+
+@media screen and (max-width: 480px) {
+  .projectdiv {
+    grid-template-columns: 480px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  }
+
+  .banner .tagline {
+    font-size: 19px;
+  }
+
+  .banner p {
+    text-align: justify;
+  }
+
+  /* .mapped-sliding-images {
+    background-color: red;
+    margin-left: 500px;
+  } */
+
+  .proj-imgbx {
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .proj-imgbx img {
+    width: 55%;
+  }
+}

@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/github.png";
 import navIcon3 from "../assets/img/twitter.png";
-import navIcon4 from "../assets/img/showwcase.png";
+import navIcon4 from "../assets/img/instagram.png";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -83,7 +83,7 @@ export const NavBar = () => {
               <a href="https://twitter.com/JSAyushThakur">
                 <img src={navIcon3} alt="" />
               </a>
-              <a href="https://www.showwcase.com/ayush2390">
+              <a href="https://www.instagram.com/jsayushthakur/">
                 <img src={navIcon4} alt="" />
               </a>
             </div>

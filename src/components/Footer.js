@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/github.png";
 import navIcon3 from "../assets/img/twitter.png";
-import navIcon4 from "../assets/img/showwcase.png";
+import navIcon4 from "../assets/img/instagram.png";
 
 export const Footer = () => {
   return (
@@ -23,7 +23,7 @@ export const Footer = () => {
               <a href="https://twitter.com/JSAyushThakur">
                 <img src={navIcon3} alt="Icon" />
               </a>
-              <a href="https://www.showwcase.com/ayush2390">
+              <a href="https://www.instagram.com/jsayushthakur">
                 <img src={navIcon4} alt="" />
               </a>
             </div>

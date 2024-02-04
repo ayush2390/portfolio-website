@@ -22,7 +22,7 @@ const Skills = () => {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 491 },
       items: 2,
     },
     mobile: {
@@ -83,7 +83,7 @@ const Skills = () => {
                       alt={image.name}
                       style={
                         image.name === "React"
-                          ? { width: "50%", paddingTop: "10px" }
+                          ? { width: "13em", paddingTop: "10px" }
                           : {}
                       }
                       key={index}

@@ -23,7 +23,7 @@ const Skills = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 491 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 490, min: 0 },

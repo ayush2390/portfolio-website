@@ -10,23 +10,23 @@ const Projects = () => {
     {
       title: "Video Player",
       imgUrl: `${youtube}`,
-      link: "https://github.com/ayush2390/Youtube-Clone",
+      link: "https://play-video-online.netlify.app/",
     },
-    
+
     {
       title: "Fitness App",
       imgUrl: `${fitness}`,
-      link: "https://github.com/ayush2390/Exercise-App",
+      link: "https://exercyse.netlify.app/",
     },
     {
       title: "Dashboard",
       imgUrl: `${dashboard}`,
-      link: "https://github.com/ayush2390/Ecommerce-Dashboard",
+      link: "https://dash-boad.netlify.app/",
     },
     {
       title: "Crypto App",
       imgUrl: `${crypto}`,
-      link: "https://github.com/ayush2390/Crypto-App",
+      link: "https://criptoo.netlify.app/",
     },
   ];
   return (

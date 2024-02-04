@@ -6,7 +6,7 @@ import redux from "../assets/img/redux.png";
 import js from "../assets/img/js.png";
 import next from "../assets/img/next.png";
 import colorSharp from "../assets/img/color-sharp.png";
-import html from "../assets/img/html-logo.png";
+import api from "../assets/img/api.png";
 import firebase from "../assets/img/firebase.png";
 import typescript from "../assets/img/typescript.png";
 import graphql from "../assets/img/graphql.png";
@@ -26,7 +26,7 @@ const Skills = () => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 490, min: 0 },
       items: 1,
     },
   };
@@ -48,16 +48,16 @@ const Skills = () => {
       name: "JavaScript",
     },
     {
-      src: `${html}`,
-      name: "HTML",
-    },
-    {
       src: `${firebase}`,
       name: "Firebase",
     },
     {
       src: `${typescript}`,
       name: "TypeScript",
+    },
+    {
+      src: `${api}`,
+      name: "API",
     },
     {
       src: `${graphql}`,
@@ -81,6 +81,12 @@ const Skills = () => {
                     <img
                       src={image.src}
                       alt={image.name}
+                      style={
+                        image.name === "React"
+                          ? { width: "50%", paddingTop: "10px" }
+                          : {}
+                      }
+                      key={index}
                       className="sliding-images"
                     />
                     <h5 className="name">{image.name}</h5>

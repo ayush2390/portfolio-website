@@ -8,10 +8,12 @@ const ExperienceCard = ({ position, company, duration }) => {
         <div className="experience-card-line"></div>
       </div>
       <div className="blog-txtx experience-card-content">
-        <div className="blog-name">
-          {position} ({company})
+        <div className="experience-name">
+          <p>
+            {position} ({company})
+          </p>
         </div>
-        <div className="blog-desc">{duration}</div>
+        <div className="experience-date">{duration}</div>
       </div>
     </div>
   );

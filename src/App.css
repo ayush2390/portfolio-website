@@ -246,7 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 200px 0 100px 0;
   background-image: url("./assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
@@ -345,7 +345,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
+
+.blogs {
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
 .project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.blogs h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
@@ -359,6 +371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -645,35 +658,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   font-weight: bold;
 }
-@media screen and (max-width: 480px) {
-  .projectdiv {
-    grid-template-columns: 480px;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
-  }
-
-  .banner .tagline {
-    font-size: 19px;
-  }
-
-  .banner p {
-    text-align: justify;
-  }
-
-  /* .mapped-sliding-images {
-    background-color: red;
-    margin-left: 500px;
-  } */
-
-  .proj-imgbx {
-    border-radius: 0px;
-    width: 100%;
-  }
-
-  .proj-imgbx img {
-    width: 55%;
-  }
-}
-
 .blogdiv {
   padding-left: 300px;
   padding-top: 50px;
@@ -701,8 +685,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 30px;
 }
 .blog-name {
-  font-size: 1.9em;
   font-weight: bold;
+  font-size: 1.9em;
+}
+
+.experience-name {
+  font-weight: bold;
+  font-size: 1.9em;
 }
 
 .blog-name:hover a {
@@ -723,7 +712,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .blog-desc {
   font-size: 1.2em;
 }
-
+.experience-date {
+  font-size: 1.2em;
+}
 .blog-txtx {
   /* background-color: red; */
   width: 55%;
@@ -745,7 +736,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 .experience-card-circle {
   border-radius: 50%;
@@ -765,4 +756,108 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .experience-card-content {
   margin-left: 1em;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 490px) {
+  .projectdiv {
+    grid-template-columns: 480px;
+    grid-template-rows: 300px 300px 300px 300px;
+    padding-left: 50px;
+    row-gap: 0px;
+  }
+
+  .blog-imgbx img {
+    width: 10em;
+    border-radius: 0px;
+  }
+
+  .blogdiv {
+    padding-left: 0px;
+    width: auto;
+  }
+
+  .blog-flex-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding-left: 10px;
+  }
+
+  .project {
+    padding: 80px 0 0px 0;
+  }
+
+  .blogs {
+    padding: 0px;
+    padding-bottom: 50px;
+  }
+
+  .banner .tagline {
+    font-size: 14px;
+  }
+
+  .proj-txtx h4 {
+    width: 70%;
+  }
+
+  .project-name {
+    width: 70%;
+  }
+  .banner {
+    padding: 100px 0 100px 0;
+    /* background-color: red; */
+  }
+
+  .banner img {
+    width: 50%;
+    margin-left: 100px;
+    /* justify-content: center; */
+  }
+
+  .banner p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .experience-name p {
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+
+  /* .mapped-sliding-images {
+    background-color: red;
+    margin-left: 500px;
+  } */
+
+  .proj-imgbx {
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .proj-imgbx::before {
+    width: 70%;
+  }
+  .proj-imgbx img {
+    width: 70%;
+  }
+
+  .blog-name {
+    font-weight: bold;
+    font-size: 1em;
+  }
+  .blog-desc {
+    font-size: 0.5em;
+  }
+
+  .experience-card-container {
+    margin-left: 1em;
+  }
+
+  .navbar-container {
+    background-color: #17151c;
+  }
 }

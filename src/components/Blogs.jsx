@@ -41,8 +41,8 @@ const Blogs = () => {
     },
   ];
   return (
-    <section className="project" id="blogs">
-      <h2> My Blogs</h2>
+    <section className="blogs" id="blogs">
+      <h2>My Blogs</h2>
       <div className="blogdiv">
         {blogs.map((project, index) => {
           return (
